@@ -9,7 +9,8 @@ const NavBar = () => {
         <Container>
           <Navbar.Brand href="#home">CRUD</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#home">StudentTable</Nav.Link>
+            <Nav.Link href="#home">Registration</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
