@@ -1,18 +1,20 @@
-import { useState } from 'react'
+import DataPage from "./pages/DataPage";
+import RegistrationPage from "./pages/RegistrationPage";
+import AppNavBar from "./components/AppNavBar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import './App.css'
-import NavBar from './components/NavBar'
-import StudentTable from './components/StudentTable'
-
-function App() {
-
+const App = () => {
   return (
-    <>
     
-    <NavBar/>
-   <StudentTable/>
-    </>
-  )
-}
+     <BrowserRouter>
+     <AppNavBar />
+     <Routes>
+      <Route path="/" element={<DataPage />} />
+      <Route path="/register" element={<RegistrationPage />} />
+     </Routes>
+     </BrowserRouter>
+    
+  );
+};
 
-export default App
+export default App;
