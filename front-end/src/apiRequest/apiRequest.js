@@ -1,5 +1,5 @@
 import axios from "axios";
-let BASEURL = "http://localhost:5050/api/v1";
+let BASEURL = "http://localhost:8080/api/v1";
 
 export async function createStudent(postBody) {
   try {
