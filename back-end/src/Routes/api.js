@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 //importing controller function for all the routing.
-const StudentContoller = require("../Controllers/StudentContoller");
+const StudentContoller = require("../Controllers/StudentController");
 
 router.post("/create" , StudentContoller.CreateStudent);
 router.get("/read" , StudentContoller.ReadStudentData);

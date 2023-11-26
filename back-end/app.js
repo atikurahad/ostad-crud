@@ -1,21 +1,21 @@
-const express = require("express");
-const app = new express();
+const express = require('express');
+const app = express();
 
 //importing router
 const router = require("./src/Routes/api");
 
 //importing database
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 //importing security middlewares
 
-require("dotenv").config();
-const cors = require("cors");
-const helmet = require("helmet");
-const hpp = require("hpp");
-const xss = require("xss-clean");
-const mongoSanitize = require("express-mongo-sanitize");
-const { rateLimit } = require("express-rate-limit");
+require('dotenv').config();
+const cors = require('cors');
+const helmet = require('helmet');
+const hpp = require('hpp');
+const xss = require('xss-clean');
+const mongoSanitize = require('express-mongo-sanitize');
+const { rateLimit } = require('express-rate-limit');
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
